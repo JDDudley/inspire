@@ -1,0 +1,99 @@
+body {
+    background: #666;
+    background-size: cover;
+    background-position: fixed;
+    margin-bottom: 200px;
+    color: #000;
+}
+html {
+    min-height: 100%;
+    position: relative;
+}
+.item-box-top {
+    background: rgba(255,255,255,0.6);
+    margin: 0;
+    padding: 20px;
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+#greeting {
+    color: #fff;
+    text-shadow: 1px 1px 0px black;
+    text-align: center;
+    margin: 6px auto;
+    margin-top: 80px;
+    font-family: 'Lato', sans-serif;
+    font-weight: light;
+    font-size: 1.5em;
+}
+#time {
+    color: #fff;
+    text-shadow: 2px 2px 0px black;
+    text-align: center;
+    margin: 6px auto;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: light;
+    font-size: 4em;
+}
+#time:hover {
+    cursor: pointer;
+}
+.item-box-bottom {
+    background: rgba(255,255,255,0.6);
+    border: none;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 200px;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+#quote h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    text-shadow: 1px 1px 0px white;
+}
+#quote h4:hover {
+    cursor: help;
+}
+#weather {
+    text-shadow: 1px 1px 0px white;
+}
+#weather:hover {
+    cursor: pointer;
+}
+.add-todo {
+    opacity: 0.8;
+}
+.list-group-item {
+    background: transparent;
+    border-radius: 0px;
+    border-left: none;
+    border-right: none;
+}
+#todo-list:hover {
+    cursor: pointer;
+}
+.crossed-out {
+    text-decoration: line-through;
+}
+.todo-check {
+    float: left;
+}
+.glyphicon-ok {
+    color: darkgreen;
+}
+.glyphicon-remove {
+    color: darkred;
+}
+.todo-remove {
+    float: right;
+}

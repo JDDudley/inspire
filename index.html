@@ -1,0 +1,57 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Inspire</title>
+	<link rel="stylesheet" href="assets/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	
+</head>
+
+<body id="body">
+	<div class="item-box-top">
+		<div id="quote">
+	</div>
+	</div>
+	<div id="greeting"></div>
+	<div id="time"></div>
+	<div class="item-box-bottom container-fluid">
+		<div class="row">
+			<div class="col-xs-6">
+				<div id="weather"></div>
+			</div>
+			<div class="col-xs-6">
+				<div id="todo">
+					<div class="input-group add-todo">
+						<span class="input-group-addon" id="todo-count"></span>
+						<input type="text" class="form-control" id="new-todo" placeholder="New To Do Item...">
+						<span class="input-group-btn"><button class="btn btn-primary add-btn" type="button">Add</button></span>
+					</div>
+					<ul id="todo-list" class="list-group">
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="app/init.js"></script>
+	<script src="app/clock.js"></script>
+	<script src="app/components/weather/weather-service.js"></script>
+	<script src="app/components/image/image-service.js"></script>
+	<script src="app/components/quote/quote-service.js"></script>
+	<script src="app/components/todo/todo-service.js"></script>
+
+	<!--Load your scripts below-->
+	<script src="app/components/weather/weather-controller.js"></script>
+	<script src="app/components/image/image-controller.js"></script>
+	<script src="app/components/quote/quote-controller.js"></script>
+	<script src="app/components/todo/todo-controller.js"></script>
+
+</body>
+
+</html>
