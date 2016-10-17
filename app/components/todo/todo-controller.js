@@ -1,4 +1,4 @@
-(function(){
+(function () {
 	// new up the TodoService that has already been configured for your use
 	// There are two methods getTodos returns and array
 	// saveTodos accepts an array and stores it to your local storage
@@ -23,10 +23,10 @@
 		$('#todo-list').html(template);
 		$('#todo-count').html(`<b>${i}</b>`);
 	}
-	
+
 	function addToDo() {
 		var todo = $('#new-todo').val();
-		myTodos.push({text: todo, finished: false});
+		myTodos.push({ text: todo, finished: false });
 		printTodos(myTodos);
 		todoService.saveTodos(myTodos);
 	}
@@ -43,23 +43,25 @@
 				}
 				return;
 			}
+			todoService.saveTodos(myTodos);
 		}
 	}
 
 	function removeTask(i) {
-		myTodos.splice(i,1);
+		myTodos.splice(i, 1);
 		printTodos(myTodos);
+		todoService.saveTodos(myTodos);
 	}
-	
-	$('.add-btn').on('click',function(){
+
+	$('.add-btn').on('click', function () {
 		if ($('#new-todo').val() != '') {
 			addToDo();
 			$('#new-todo').val('');
 		}
 	});
-	$('#todo-list').on('click','.list-group-item',function(){
+	$('#todo-list').on('click', '.list-group-item', function () {
 		console.log('Clicked on item - ' + this);
 		finishTask(this);
 	});
-	
-}())
+
+} ())
