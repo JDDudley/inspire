@@ -3,6 +3,7 @@ body {
     background-size: cover;
     background-position: fixed;
     margin-bottom: 200px;
+    background-image: url('default-bg.jpg');
     color: #000;
 }
 html {
